@@ -16,13 +16,13 @@ def minOperations(n):
     if n < 2:
         return 0
     factor_sum = 0
-    k = 2  # Start with the first prime number
+    i = 2  # Start with the first prime number
     while n > 1:
-        if n % k == 0:
-            factor_sum += k
-            n //= k  # Use integer division
+        if n % i == 0:
+            factor_sum += i
+            n //= i  # Use integer division
         else:
-            k += 1
+            i += 1
     return factor_sum
 
 # Example usage
